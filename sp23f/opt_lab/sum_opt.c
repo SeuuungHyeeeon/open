@@ -47,12 +47,12 @@ void init(vec_t* v)
     assert(v);
     v->len = MAX_NUM;
     v->data = (int*)malloc(sizeof(int) * MAX_NUM);
-    memset(v->data, 0, sizeof(int) * MAX_NUM);
 
-    // init 
+    // Initialize the vector elements
     for(int i = 0; i < MAX_NUM; i++)
         v->data[i] = i;
 }
+
 
 int main()
 {
